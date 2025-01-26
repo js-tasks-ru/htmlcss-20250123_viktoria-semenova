@@ -1,4 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <!-- Ваше решение -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Семантическая разметка</title>
+    <style>
+      /* Базовые стили */
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Стили хедера */
+      .header__title {
+        color: white;
+        font-size: 32px;
+        background-color: #ff4d4d;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+      }
+
+      .header__navigation {
+        background-color: #ff9900;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .header__navigation-link {
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        display: inline-block;
+        margin-right: 1%;
+      }
+
+      /* Основной контент */
+      .main {
+        background-color: #4caf50;
+        padding: 20px 20px 10px 20px;
+      }
+
+      .article {
+        background-color: #0033cc;
+        color: white;
+        margin-bottom: 10px;
+        padding: 20px;
+      }
+
+      .article__title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .article__list {
+        padding-left: 20px;
+      }
+      .article__list-item {
+        margin: 5px 0;
+      }
+
+      /* Стили футера */
+      .footer {
+        background-color: #990099;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Header</h1>
+      <nav class="header__navigation">
+        <a href="#" class="header__navigation-link">Navigation 1</a>
+        <a href="#" class="header__navigation-link">Navigation 2</a>
+        <a href="#" class="header__navigation-link">Navigation 3</a>
+      </nav>
+    </header>
+    <main class="main">
+      <article class="article">
+        <h2 class="article__title">Article 1</h2>
+        <ul class="article__list">
+          <li class="article__list-item">Оригинальная трилогия</li>
+          <li class="article__list-item">Трилогия приквелов</li>
+          <li class="article__list-item">Трилогия сиквелов</li>
+        </ul>
+      </article>
+      <article class="article">
+        <h2 class="article__title">Article 2</h2>
+        <ol class="article__list">
+          <li class="article__list-item">Эпизод IV — Новая надежда</li>
+          <li class="article__list-item">
+            Эпизод V — Империя наносит ответный удар
+          </li>
+          <li class="article__list-item">Эпизод VI — Возвращение джедая</li>
+        </ol>
+      </article>
+    </main>
+    <footer class="footer">Footer</footer>
+  </body>
 </html>
