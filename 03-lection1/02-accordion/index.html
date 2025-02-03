@@ -1,18 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- Страница с аккордеоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./accordion.css" />
+  </head>
+  <body>
+    <div class="accordion">
+      <details open class="accordion__item">
+        <summary class="accordion__summary">
+          Почему понедельник всегда такой тяжелый?
+        </summary>
+        <p class="accordion__text">
+          Потому что он всю неделю несёт на себе груз наших несбывшихся надежд
+          на отдых. В пятницу мы полны оптимизма, в субботу – беззаботности, в
+          воскресенье – паники, а в понедельник всё это превращается в кофе и
+          глубокие вздохи. Но ничего, скоро пятница – и этот круговорот
+          страданий повторится!
+        </p>
+      </details>
+      <details class="accordion__item">
+        <summary class="accordion__summary">
+          Как научиться вставать рано утром бодрым и счастливым?
+        </summary>
+        <p class="accordion__text">
+          Очень просто – нужно лечь спать рано. Правда, перед этим надо
+          выключить телефон, прекратить смотреть сериалы, перестать размышлять о
+          смысле жизни и вспомнить, что "ещё 5 минут" – это ловушка. Если вдруг
+          получится – расскажи, как, потому что это миф, который никто ещё не
+          разгадал.
+        </p>
+      </details>
+      <details class="accordion__item">
+        <summary class="accordion__summary">
+          Почему холодильник ночью манит нас больше, чем днём?
+        </summary>
+        <p class="accordion__text">
+          Потому что днём он просто хранит еду, а ночью превращается в портал к
+          гастрономическому счастью. Только ночью в нём вдруг появляются
+          идеально вкусные бутерброды, йогурты со смыслом и загадочные остатки
+          торта. Главное – не попасться на глаза весам, они потом мстят.
+        </p>
+      </details>
+    </div>
+  </body>
 </html>
