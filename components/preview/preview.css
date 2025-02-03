@@ -1,0 +1,6 @@
+.preview {
+  background-color: var(--grey-1);
+  border-top: 1px solid var(--grey-2);
+  border-bottom: 1px solid var(--grey-2);
+  min-height: 100px;
+}

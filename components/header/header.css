@@ -1,11 +1,9 @@
-.c-header {
-  background-color: var(--white);
-  border-bottom: 1px solid var(--grey-2);
-  padding: 96px 0 96px 160px;
+.header {
+  padding: 96px 0 77px;
 }
-.c-header__title {
+.header__title {
+  font-family: 'Inter', sans-serif;
   font-size: 50px;
   line-height: 64px;
   font-weight: 500;
-  color: var(--black);
 }
