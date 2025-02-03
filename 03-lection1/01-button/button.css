@@ -1,12 +1,16 @@
 .button {
+    height: 48px;
     border: 0;
     border-radius: 8px;
-    padding: 15px 0 14px 0;
+    padding: 15px 52px 14px;
     font-size: 16px;
     font-weight: 500;
-    min-width: 182px;
     text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
+
   .button_primary {
     background-color: var(--blue);
     color: var(--white);
