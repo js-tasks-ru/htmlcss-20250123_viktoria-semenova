@@ -8,9 +8,8 @@
   flex-direction: column;
   gap: 25px;
 }
-.card__preview {
+.card__content {
   flex-grow: 1;
-  width: 300px;
 }
 .card__description {
   text-align: center;
