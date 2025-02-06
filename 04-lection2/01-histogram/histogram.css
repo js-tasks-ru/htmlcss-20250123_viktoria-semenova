@@ -1,65 +1,65 @@
 .histogram {
-    padding: 16px 24px 24px;
-    border: 1px solid var(--grey-3);
-    border-radius: 8px;
-    background-color: var(--white);
-    color: var(--black);
-    font-family: 'Inter', sans-serif;
-  }
-  .histogram__header {
-    margin-bottom: 39px;
-  }
-  .histogram__title {
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    gap: 47px;
-    justify-content: space-between;
-    margin-bottom: 6px;
-  }
-  .histogram__name {
-    opacity: 0.8;
-    flex-grow: 1;
-  }
-  .histogram__view-all {
-    color: var(--blue);
-  }
-  .histogram__value {
-    font-size: 20px;
-    line-height: 26px;
-  }
-  .histogram__chart {
-    height: 50px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 1px;
-  }
-  .histogram__bar {
-    background-color: var(--blue);
-    flex: auto;
-  }
+  padding: 16px 24px 24px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: 'Inter', sans-serif;
+}
+.histogram__header {
+  margin-bottom: 39px;
+}
+.histogram__title {
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  gap: 47px;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.histogram__name {
+  opacity: 0.8;
+  flex-grow: 1;
+}
+.histogram__view-all {
+  color: var(--blue);
+  margin-top: 3px;
+}
+.histogram__value {
+  font-size: 20px;
+  line-height: 26px;
+}
+.histogram__chart {
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  gap: 1px;
+}
+.histogram__bar {
+  background-color: var(--blue);
+  flex: auto;
+}
 .histogram__bar_100 {
-    height:100%;
+  height: 100%;
 }
 .histogram__bar_70 {
-    height:70%;
+  height: 70%;
 }
 .histogram__bar_44 {
-    height:44%;
+  height: 44%;
 }
 .histogram__bar_78 {
-    height:78%;
+  height: 78%;
 }
 .histogram__bar_60 {
-    height:60%;
+  height: 60%;
 }
 .histogram__bar_22 {
-    height:22%;
+  height: 22%;
 }
 .histogram__bar_90 {
-    height:90%;
+  height: 90%;
 }
 .histogram__bar_34 {
-    height:34%;
+  height: 34%;
 }
