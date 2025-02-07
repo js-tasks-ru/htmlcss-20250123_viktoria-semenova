@@ -14,6 +14,7 @@
   --purple: #7048e8;
   --blue: #374fc7;
   --red: #f03d3e;
+  --grey-0: #f9fafc;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
   --grey-3: #acb5bd;
@@ -24,6 +25,21 @@
 
   --primary: var(--blue);
   --secondary: var(--purple);
+
+  --background-primary: var(--white);
+  --background-secondary: var(--grey-0);
+
+  --text-primary: var(--black);
+  --text-secondary: var(--grey-4);
+  --text-muted: var(--grey-3);
+
+  --h1: medium 50px/64px 'Inter', sans-serif;
+  --h2: medium 38px/48px 'Inter', sans-serif;
+  --h3: normal 28px/38px 'Inter', sans-serif;
+  --h4: normal 20px/26px 'Inter', sans-serif;
+  --h5: medium 12px/18px 'Inter', sans-serif;
+  --p: normal 16px/24px 'Inter', sans-serif;
+  --small: normal 14px/22px 'Inter', sans-serif;
 }
 html,
 body {

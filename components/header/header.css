@@ -1,9 +1,10 @@
 .header {
-  font-family: 'Inter', sans-serif;
   padding: 96px 0 77px;
 }
+.header_inner {
+  padding: 24px 0 60px;
+  grid-area: header;
+}
 .header__title {
-  font-size: 50px;
-  line-height: 64px;
-  font-weight: 500;
+  font: var(--h1);
 }

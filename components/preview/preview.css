@@ -1,8 +1,16 @@
 .preview {
-  background-color: var(--grey-1);
+  background-color: var(--background-secondary);
   border-top: 1px solid var(--grey-2);
   border-bottom: 1px solid var(--grey-2);
   padding: 68px 0;
+}
+.preview_inner {
+  padding: 36px 0;
+  background-color: var(--background-secondary);
+  border: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 56px;
 }
 .preview__grid {
   display: flex;
