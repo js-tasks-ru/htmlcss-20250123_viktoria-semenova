@@ -6,6 +6,8 @@
 @import '../../components/preview/preview.css';
 @import '../../components/footer/footer.css';
 @import '../../components/card/card.css';
+@import '../../components/menu/menu.css';
+@import '../../components/component/component.css';
 
 :root {
   --white: #ffffff;
@@ -22,6 +24,7 @@
 
   --error: var(--red);
   --success: var(--blue);
+  --notification: #d84910;
 
   --primary: var(--blue);
   --secondary: var(--purple);
@@ -29,17 +32,20 @@
   --background-primary: var(--white);
   --background-secondary: var(--grey-0);
 
+  --drop-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+
   --text-primary: var(--black);
+  --text-primary-black: #000;
   --text-secondary: var(--grey-4);
   --text-muted: var(--grey-3);
 
-  --h1: medium 50px/64px 'Inter', sans-serif;
-  --h2: medium 38px/48px 'Inter', sans-serif;
-  --h3: normal 28px/38px 'Inter', sans-serif;
-  --h4: normal 20px/26px 'Inter', sans-serif;
-  --h5: medium 12px/18px 'Inter', sans-serif;
-  --p: normal 16px/24px 'Inter', sans-serif;
-  --small: normal 14px/22px 'Inter', sans-serif;
+  --h1: 500 50px/64px 'Inter', sans-serif;
+  --h2: 500 38px/48px 'Inter', sans-serif;
+  --h3: 400 28px/38px 'Inter', sans-serif;
+  --h4: 400 20px/26px 'Inter', sans-serif;
+  --h5: 500 12px/18px 'Inter', sans-serif;
+  --p: 400 16px/24px 'Inter', sans-serif;
+  --small: 400 14px/22px 'Inter', sans-serif;
 }
 html,
 body {

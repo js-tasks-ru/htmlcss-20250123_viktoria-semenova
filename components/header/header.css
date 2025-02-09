@@ -3,7 +3,6 @@
 }
 .header_inner {
   padding: 24px 0 60px;
-  grid-area: header;
 }
 .header__title {
   font: var(--h1);

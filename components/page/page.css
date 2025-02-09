@@ -16,9 +16,12 @@
     'main'
     'footer';
 }
-.page__footer {
-  grid-area: footer;
-}
 .page__header {
   grid-area: header;
+}
+.page__main_inner {
+  grid-area: main;
+}
+.page__footer {
+  grid-area: footer;
 }
