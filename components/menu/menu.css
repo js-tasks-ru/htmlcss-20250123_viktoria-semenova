@@ -1,0 +1,26 @@
+.menu {
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  gap: 16px;
+}
+.menu__title {
+  font: var(--h4);
+  color: var(--text-primary-black);
+}
+.menu__items {
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  gap: 4px;
+}
+.menu__item {
+  font: var(--small);
+  color: var(--black);
+}
+.menu__item_active {
+  color: var(--notification);
+}
+.menu__item_hidden {
+  padding-bottom: 22px;
+}

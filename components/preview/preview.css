@@ -1,8 +1,25 @@
 .preview {
-  background-color: var(--grey-1);
+  background-color: var(--background-secondary);
   border-top: 1px solid var(--grey-2);
   border-bottom: 1px solid var(--grey-2);
   padding: 68px 0;
+}
+.preview_inner {
+  padding: 36px 0;
+  background-color: var(--background-secondary);
+  border: 0;
+}
+.preview__wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "menu component";
+  gap: 56px;
+}
+.preview__menu {
+  grid-area: menu;
+}
+.preview__component{
+  grid-area: component;
 }
 .preview__grid {
   display: flex;
