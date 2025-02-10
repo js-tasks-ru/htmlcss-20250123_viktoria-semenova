@@ -16,7 +16,7 @@
   max-width: 640px;
   margin: auto;
 }
-.footer__text_inner {
+.footer_inner .footer__text {
   color: var(--text-muted);
   font: var(--h5);
   text-transform: uppercase;
