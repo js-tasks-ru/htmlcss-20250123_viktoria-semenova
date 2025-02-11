@@ -14,14 +14,14 @@
 }
 
 .button_primary {
-  background-color: var(--blue);
+  background-color: var(--primary);
   color: var(--white);
   transition:
     opacity 200ms ease-in-out,
     background-color 200ms ease-in-out;
 }
 .button_secondary {
-  background-color: var(--purple);
+  background-color: var(--secondary);
   color: var(--white);
   transition:
     opacity 200ms ease-in-out,
@@ -30,7 +30,7 @@
 .button_alternate {
   background-color: var(--white);
   border: 1px solid var(--grey-3);
-  color: var(--grey-4);
+  color: var(--text-secondary);
   transition:
     opacity 200ms ease-in-out,
     border-color 200ms ease-in-out;
