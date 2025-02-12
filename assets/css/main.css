@@ -8,6 +8,7 @@
 @import '../../components/card/card.css';
 @import '../../components/menu/menu.css';
 @import '../../components/component/component.css';
+@import '../../03-lection1/01-button/button.css';
 
 :root {
   --white: #ffffff;
@@ -31,6 +32,7 @@
 
   --background-primary: var(--white);
   --background-secondary: var(--grey-0);
+  --overlay: rgba(196, 196, 196, 50%);
 
   --border-primary: var(--grey-3);
 
@@ -39,6 +41,7 @@
   --text-primary: var(--black);
   --text-primary-black: #000;
   --text-primary-button: var(--white);
+  --text-primary-on-dark-background: var(--grey-2);
   --text-secondary: var(--grey-4);
   --text-muted: var(--grey-3);
 
