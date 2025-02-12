@@ -7,3 +7,10 @@
 .header__title {
   font: var(--h1);
 }
+/*стили для телефона с шириной экрана X < 768 */
+@media screen and (max-width: 767px) {
+  .header__title {
+    font: var(--h3);
+    color: var(--text-secondary);
+  }
+}

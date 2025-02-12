@@ -1,10 +1,21 @@
 .component {
-    background-color: var(--background-primary);
-    border-radius: 12px;
-    box-shadow: var(--drop-shadow);
-    padding: 32px 48px;
+  background-color: var(--background-primary);
+  border-radius: 12px;
+  box-shadow: var(--drop-shadow);
+  padding: 32px 48px;
 }
-.component__title{
-    font: var(--h3);
-    color: var(--text-secondary);
+.component__title {
+  font: var(--h3);
+  color: var(--text-secondary);
+}
+/*стили для телефона с шириной экрана X < 768 */
+@media screen and (max-width: 767px) {
+  .component {
+    border-radius: unset;
+    box-shadow: none;
+    padding: 32px 0px;
+  }
+  .component__title {
+    font: var(--h4);
+  }
 }

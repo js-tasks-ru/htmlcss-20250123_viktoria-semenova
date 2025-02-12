@@ -23,3 +23,24 @@
   font-size: 16px;
   font-weight: 400;
 }
+/*стили для телефона с шириной экрана X < 768*/
+@media screen and (max-width: 767px) {
+  .card {
+    height: 210px;
+    padding: unset;
+    border-radius: 8px;
+    gap: 0px;
+  }
+  .card__description {
+    border-top: 1px solid var(--border-secondary);
+    padding: 12px 10px;
+  }
+  .card__title {
+    font: var(--p);
+    color: var(--text-primary);
+    margin-bottom: 0px;
+  }
+  .card__subtitle {
+    display: none;
+  }
+}

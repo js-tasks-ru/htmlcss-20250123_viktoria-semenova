@@ -24,3 +24,8 @@
 .menu__item_hidden {
   padding-bottom: 22px;
 }
+/*стили для телефона с шириной экрана X < 768 */
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+}

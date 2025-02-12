@@ -1,7 +1,7 @@
 .preview {
   background-color: var(--background-secondary);
-  border-top: 1px solid var(--grey-2);
-  border-bottom: 1px solid var(--grey-2);
+  border-top: var(--border-secondary);
+  border-bottom: var(--border-secondary);
   padding: 68px 0;
 }
 .preview_inner {
@@ -12,18 +12,39 @@
 .preview__wrapper {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: "menu component";
+  grid-template-areas: 'menu component';
   gap: 56px;
 }
 .preview__menu {
   grid-area: menu;
 }
-.preview__component{
+.preview__component {
   grid-area: component;
 }
 .preview__grid {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  margin-bottom: 64px;
+}
+.preview .button {
+  margin: 0 auto;
+}
+/*стили для телефона с шириной экрана X < 768 */
+@media screen and (max-width: 767px) {
+  .preview {
+    padding: 24px 0;
+  }
+  .preview_inner {
+    padding: unset;
+    background-color: var(--background-primary);
+  }
+  .preview__wrapper {
+    display: block;
+  }
+  .preview__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 23px 16px;
+    margin-bottom: 24px;
+  }
 }
