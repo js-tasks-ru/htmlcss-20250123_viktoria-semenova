@@ -36,6 +36,7 @@
 
   --text-primary: var(--black);
   --text-primary-black: #000;
+  --text-primary-on-dark-background: var(--grey-2);
   --text-secondary: var(--grey-4);
   --text-muted: var(--grey-3);
 
