@@ -22,3 +22,9 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+/*стили для телефона с шириной экрана X < 768 */
+@media screen and (max-width: 767px) {
+  .footer__title {
+    font: var(--h4);
+  }
+}

@@ -1,4 +1,12 @@
 .content-area {
   max-width: 1110px;
   margin: 0 auto;
+  position: relative;
+}
+/*стили для телефона и планшета с шириной экрана X < 1280, stretch сетка с отступами слева и права по 16px*/
+@media screen and (max-width: 1279px) {
+  .content-area {
+    max-width: none;
+    margin: 0 16px;
+  }
 }
