@@ -1,11 +1,11 @@
 .preview {
   background-color: var(--background-secondary);
-  border-top: var(--border-secondary);
-  border-bottom: var(--border-secondary);
+  border-top: 1px solid var(--border-secondary);
+  border-bottom: 1px solid var(--border-secondary);
   padding: 68px 0;
 }
 .preview_inner {
-  padding: 36px 0;
+  padding: 0;
   background-color: var(--background-secondary);
   border: 0;
 }
