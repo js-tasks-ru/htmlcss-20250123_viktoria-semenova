@@ -3,7 +3,7 @@
 }
 .footer_inner {
   background-color: var(--background-secondary);
-  padding: 92px 0 56px;
+  padding: 56px 0;
 }
 .footer__title {
   font: var(--h2);

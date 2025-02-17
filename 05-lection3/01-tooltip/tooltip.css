@@ -2,6 +2,11 @@
   display: inline-block;
   position: relative;
 }
+.tooltip__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--text-primary);
+}
 .tooltip__bubble {
   display: none;
   padding: 13px 21px 8px;

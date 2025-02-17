@@ -2,11 +2,8 @@
 }
 
 .accordion__item {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  border: 1px solid var(--grey-3);
+  font: var(--p);
+  border: 1px solid var(--border-primary);
   border-radius: 8px;
   padding: 24px 32px;
   margin-bottom: 8px;
@@ -16,8 +13,10 @@
 }
 
 .accordion__summary {
-  display: block;
-  color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  color: var(--text-primary);
 }
 .accordion__summary::-webkit-details-marker {
   /* нестандартный псевдоэлемент Google Chrome */
@@ -25,7 +24,17 @@
 }
 
 .accordion__text {
-  color: var(--grey-4);
+  color: var(--text-secondary);
   margin-top: 16px;
   margin-bottom: 8px;
+}
+.accordion__icon {
+  color: var(--text-secondary);
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease-in-out;
+}
+.accordion__item[open] .accordion__icon {
+  transform: rotate(-180deg);
+  transition: transform 0.2s ease-in-out;
 }
