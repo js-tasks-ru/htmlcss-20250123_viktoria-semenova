@@ -1,0 +1,27 @@
+/* Базовый стиль для фона Desktop-first*/
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url(./public/forest_2560.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Для планшетов с большим экранов (от 769px до 1024px включительно) */
+@media screen and (max-width: 1024px) {
+  .background {
+    background-image: url(./public/forest_1024.jpg);
+  }
+}
+/* Для планшетов с маленьким экраном (от 401px до 768px включительно) */
+@media screen and (max-width: 768px) {
+  .background {
+    background-image: url(./public/forest_768.jpg);
+  }
+}
+/* Для маленьких экранов (до 400px включительно) */
+@media screen and (max-width: 400px) {
+  .background {
+    background-image: url(./public/forest_400.jpg);
+  }
+}
