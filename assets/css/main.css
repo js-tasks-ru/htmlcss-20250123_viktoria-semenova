@@ -28,7 +28,9 @@
   --notification: #d84910;
 
   --primary: var(--blue);
+  --primary-hover: #2342c0;
   --secondary: var(--purple);
+  --primary-secondary: #5028c6;
 
   --background-primary: var(--white);
   --background-secondary: var(--grey-0);
