@@ -16,7 +16,7 @@
   height: 28px;
   border-radius: 4px;
   border: 1px solid var(--border-secondary);
-  background-color: transparent;
+  background-color: var(--background-primary);
   position: relative;
 }
 .checkbox__icon {
