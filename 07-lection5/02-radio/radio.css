@@ -1,0 +1,61 @@
+.radio {
+  display: inline-block;
+  position: relative;
+}
+.radio__input {
+  position: absolute; /*в файле destyle.css уже указан для input стиль appearance: none; поэтому нет необходимости его куда-то двигать. Единственно,что спозиционировала так, чтобы он выпал из потока и на его место встал кастомизированный чекбокс */
+}
+.radio__state {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.radio__control {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--border-secondary);
+  background-color: var(--background-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.radio__icon {
+  display: none;
+  width: 15px;
+  height: 13px;
+  color: var(--text-primary-button);
+}
+.radio__title {
+  font: var(--p);
+  color: var(--text-secondary);
+}
+.radio__input:focus ~ .radio__state .radio__title {
+  text-decoration: underline;
+}
+.radio__state:hover .radio__control {
+  border-color: var(--primary-hover);
+  background-color: var(--primary-hover);
+}
+.radio__input:checked ~ .radio__state .radio__control {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+.radio__input:checked ~ .radio__state .radio__icon {
+  display: block;
+}
+.radio__input:checked ~ .radio__state:hover .radio__control {
+  border-color: var(--primary-hover);
+  background-color: var(--primary-hover);
+}
+.radio__input:disabled ~ .radio__state {
+  cursor: default;
+}
+.radio__input:disabled ~ .radio__state .radio__control {
+  border-color: var(--border-secondary);
+  background-color: var(--border-secondary);
+}
+.radio__input:disabled ~ .radio__state .radio__title {
+  color: var(--text-primary-on-dark-background);
+}
