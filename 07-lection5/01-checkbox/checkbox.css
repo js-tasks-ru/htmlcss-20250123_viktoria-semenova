@@ -17,15 +17,17 @@
   border-radius: 4px;
   border: 1px solid var(--border-secondary);
   background-color: var(--background-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 .checkbox__icon {
   display: none;
   width: 15px;
   height: 13px;
   color: var(--text-primary-button);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .checkbox__title {
   font: var(--p);
