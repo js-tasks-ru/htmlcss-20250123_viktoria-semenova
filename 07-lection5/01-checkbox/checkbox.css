@@ -1,0 +1,63 @@
+.checkbox {
+  display: inline-block;
+  position: relative;
+}
+.checkbox__input {
+  position: absolute; /*в файле destyle.css уже указан для input стиль appearance: none; поэтому нет необходимости его куда-то двигать. Единственно,что спозиционировала так, чтобы он выпал из потока и на его место встал кастомизированный чекбокс*/
+}
+.checkbox__state {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.checkbox__control {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  border: 1px solid var(--border-secondary);
+  background-color: var(--background-primary);
+  position: relative;
+}
+.checkbox__icon {
+  display: none;
+  width: 15px;
+  height: 13px;
+  color: var(--text-primary-button);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.checkbox__title {
+  font: var(--p);
+  color: var(--text-secondary);
+}
+.checkbox__input:focus ~ .checkbox__state .checkbox__title {
+  text-decoration: underline;
+}
+.checkbox__state:hover .checkbox__control {
+  border-color: var(--primary-hover);
+  background-color: var(--primary-hover);
+}
+.checkbox__input:checked ~ .checkbox__state .checkbox__control {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+.checkbox__input:checked ~ .checkbox__state .checkbox__icon {
+  display: block;
+}
+.checkbox__input:checked ~ .checkbox__state:hover .checkbox__control {
+  border-color: var(--primary-hover);
+  background-color: var(--primary-hover);
+}
+.checkbox__input:disabled ~ .checkbox__state {
+  cursor: default;
+}
+.checkbox__input:disabled ~ .checkbox__state .checkbox__control {
+  border-color: var(--border-secondary);
+  background-color: var(--border-secondary);
+}
+.checkbox__input:disabled ~ .checkbox__state .checkbox__title {
+  color: var(--text-primary-on-dark-background);
+}
