@@ -17,15 +17,18 @@
   border-radius: 50%;
   border: 1px solid var(--border-secondary);
   background-color: var(--background-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 .radio__icon {
   display: none;
-  width: 15px;
-  height: 13px;
-  color: var(--text-primary-button);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .radio__title {
   font: var(--p);
@@ -40,7 +43,6 @@
 }
 .radio__input:checked ~ .radio__state .radio__control {
   border-color: var(--primary);
-  background-color: var(--primary);
 }
 .radio__input:checked ~ .radio__state .radio__icon {
   display: block;
