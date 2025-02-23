@@ -1,11 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <div class="input">
+      <label class="input__label" for="default">label</label>
+      <input
+        id="default"
+        class="input__control"
+        type="text"
+        placeholder="Placeholder"
+      />
+      <p class="input__status">Some status</p>
+    </div>
+    <div class="input input_focus">
+      <label class="input__label" for="focus">focus</label>
+      <input
+        id="focus"
+        class="input__control input__control_focus"
+        type="text"
+        placeholder="Placeholder"
+        value="Filled Input"
+      />
+      <p class="input__status">Some status</p>
+    </div>
+    <div class="input input_success">
+      <label class="input__label" for="success">success</label>
+      <input
+        id="success"
+        class="input__control"
+        type="text"
+        placeholder="Placeholder"
+        value="Success"
+      />
+      <svg class="input__icon">
+        <use href="../../assets/images/sprite.svg#Success"></use>
+      </svg>
+      <p class="input__status">Some status</p>
+    </div>
+    <div class="input input_error">
+      <label class="input__label" for="error">Error</label>
+      <input
+        id="error"
+        class="input__control"
+        type="text"
+        placeholder="Placeholder"
+        value="Error"
+      />
+      <svg class="input__icon">
+        <use href="../../assets/images/sprite.svg#Error"></use>
+      </svg>
+      <p class="input__status">Some status</p>
+    </div>
+    <div class="input">
+      <label class="input__label" for="disabled">Disabled</label>
+      <input
+        id="disabled"
+        class="input__control"
+        type="text"
+        value="Disabled"
+        disabled
+      />
+      <p class="input__status">Some status</p>
+    </div>
+  </body>
 </html>
