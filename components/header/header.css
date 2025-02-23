@@ -1,5 +1,5 @@
 .header {
-  padding: 24px 0 0;
+  padding: 24px 0 77px;
 }
 .header_inner {
   padding: 24px 0 60px;
@@ -12,7 +12,6 @@
 }
 .header__title {
   font: var(--h1);
-  margin-bottom: 40px;
 }
 
 /*стили для телефона с шириной экрана X < 768 */

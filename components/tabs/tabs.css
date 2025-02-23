@@ -1,0 +1,90 @@
+.tabs {
+  position: relative;
+}
+.tabs__radio {
+  position: absolute;
+}
+.tabs__scroller {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  top: -105px;
+}
+.tabs__label {
+  font: var(--p);
+  color: var(--text-muted);
+  padding-bottom: 8px;
+  position: relative;
+}
+.tabs__label::before,
+.tabs__label::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 0;
+  height: 5px;
+  background-color: var(--text-primary);
+}
+.tabs__label::before {
+  left: 50%;
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
+}
+.tabs__label::after {
+  right: 50%;
+  transition:
+    width 0.3s ease,
+    right 0.3s ease;
+}
+.tabs__label:hover {
+  color: var(--text-primary);
+}
+input[id='#all-components']:checked
+  ~ .tabs__scroller
+  label[for='#all-components'] {
+  color: var(--text-primary);
+}
+input[id='#elements']:checked ~ .tabs__scroller label[for='#elements'] {
+  color: var(--text-primary);
+}
+input[id='#containers']:checked ~ .tabs__scroller label[for='#containers'] {
+  color: var(--text-primary);
+}
+input[id='#templates']:checked ~ .tabs__scroller label[for='#templates'] {
+  color: var(--text-primary);
+}
+.tabs__label:hover::before,
+.tabs__label:hover::after,
+input[id='#all-components']:checked
+  ~ .tabs__scroller
+  label[for='#all-components']::before,
+input[id='#all-components']:checked
+  ~ .tabs__scroller
+  label[for='#all-components']::after,
+input[id='#elements']:checked ~ .tabs__scroller label[for='#elements']::before,
+input[id='#elements']:checked ~ .tabs__scroller label[for='#elements']::after,
+input[id='#containers']:checked
+  ~ .tabs__scroller
+  label[for='#containers']::before,
+input[id='#containers']:checked
+  ~ .tabs__scroller
+  label[for='#containers']::after,
+input[id='#templates']:checked
+  ~ .tabs__scroller
+  label[for='#templates']::before,
+input[id='#templates']:checked
+  ~ .tabs__scroller
+  label[for='#templates']::after {
+  width: 50%;
+}
+input[id='#elements']:checked ~ .preview__grid .tabs__content,
+input[id='#containers']:checked ~ .preview__grid .tabs__content,
+input[id='#templates']:checked ~ .preview__grid .tabs__content {
+  display: none;
+}
+input[id='#elements']:checked ~ .preview__grid .tabs__content_element,
+input[id='#containers']:checked ~ .preview__grid .tabs__content_container,
+input[id='#templates']:checked ~ .preview__grid .tabs__content_template {
+  display: flex;
+}
