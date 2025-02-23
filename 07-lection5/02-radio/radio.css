@@ -38,18 +38,16 @@
   text-decoration: underline;
 }
 .radio__state:hover .radio__control {
-  border-color: var(--primary-hover);
-  background-color: var(--primary-hover);
+  border: 2px solid var(--primary-hover);
 }
 .radio__input:checked ~ .radio__state .radio__control {
-  border-color: var(--primary);
+  border: 2px solid var(--primary);
 }
 .radio__input:checked ~ .radio__state .radio__icon {
   display: block;
 }
 .radio__input:checked ~ .radio__state:hover .radio__control {
-  border-color: var(--primary-hover);
-  background-color: var(--primary-hover);
+  opacity: 0.7;
 }
 .radio__input:disabled ~ .radio__state {
   cursor: default;
