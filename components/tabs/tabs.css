@@ -9,6 +9,7 @@
   gap: 40px;
   position: absolute;
   top: -105px;
+  white-space: nowrap;
 }
 .tabs__label {
   font: var(--p);
@@ -87,4 +88,11 @@ input[id='#elements']:checked ~ .preview__grid .tabs__content_element,
 input[id='#containers']:checked ~ .preview__grid .tabs__content_container,
 input[id='#templates']:checked ~ .preview__grid .tabs__content_template {
   display: flex;
+}
+/*стили для телефона с шириной экрана X < 768 */
+@media screen and (max-width: 767px) {
+  .tabs__scroller {
+    top: -61px;
+    gap: 24px;
+  }
 }
