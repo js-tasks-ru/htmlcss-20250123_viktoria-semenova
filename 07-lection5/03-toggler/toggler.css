@@ -1,0 +1,62 @@
+.toggler {
+  display: inline-block;
+  position: relative;
+}
+.toggler__input {
+  position: absolute; /*в файле destyle.css уже указан для input стиль appearance: none; поэтому нет необходимости его куда-то двигать. Единственно,что спозиционировала так, чтобы он выпал из потока и на его место встал кастомизированный чекбокс*/
+}
+.toggler__state {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.toggler__control {
+  width: 52px;
+  height: 28px;
+  border-radius: 16px;
+  border: 1px solid var(--border-secondary);
+  background-color: var(--background-primary);
+  position: relative;
+  transition: all 0.5s ease;
+}
+.toggler__icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--border-secondary);
+  position: absolute;
+  top: 50%;
+  transform: translate(2px, -50%);
+  transition: all 0.5s ease;
+}
+.toggler__title {
+  font: var(--p);
+  color: var(--text-secondary);
+}
+.toggler__input:focus ~ .toggler__state .toggler__title {
+  text-decoration: underline;
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+.toggler__input:checked ~ .toggler__state .toggler__icon {
+  background-color: var(--background-primary);
+  transform: translate(24px, -50%);
+}
+
+.toggler__input:disabled ~ .toggler__state {
+  cursor: default;
+}
+.toggler__input:disabled ~ .toggler__state .toggler__control {
+  border-color: var(--border-secondary);
+  background-color: var(--border-secondary);
+}
+.toggler__input:disabled ~ .toggler__state .toggler__icon {
+  background-color: var(--border-primary);
+}
+.toggler__input:disabled ~ .toggler__state .toggler__title {
+  color: var(--text-primary-on-dark-background);
+}
