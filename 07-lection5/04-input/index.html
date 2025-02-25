@@ -7,64 +7,75 @@
   </head>
   <body>
     <div class="input">
-      <label class="input__label" for="default">label</label>
-      <input
-        id="default"
-        class="input__control"
-        type="text"
-        placeholder="Placeholder"
-      />
-      <p class="input__status">Some status</p>
-    </div>
-    <div class="input input_focus">
-      <label class="input__label" for="focus">focus</label>
-      <input
-        id="focus"
-        class="input__control input__control_focus"
-        type="text"
-        placeholder="Placeholder"
-        value="Filled Input"
-      />
-      <p class="input__status">Some status</p>
+      <label class="input__label" for="input1">label</label>
+      <div class="input__wrapper">
+        <input
+          id="input1"
+          class="input__control"
+          type="text"
+          placeholder="Placeholder"
+        />
+        <svg class="input__icon">
+          <use href="../../assets/images/sprite.svg#Success"></use>
+        </svg>
+        <svg class="input__icon">
+          <use href="../../assets/images/sprite.svg#Error"></use>
+        </svg>
+      </div>
     </div>
     <div class="input input_success">
-      <label class="input__label" for="success">success</label>
-      <input
-        id="success"
-        class="input__control"
-        type="text"
-        placeholder="Placeholder"
-        value="Success"
-      />
-      <svg class="input__icon">
-        <use href="../../assets/images/sprite.svg#Success"></use>
-      </svg>
-      <p class="input__status">Some status</p>
+      <label class="input__label" for="input3">success</label>
+      <div class="input__wrapper">
+        <input
+          id="input3"
+          class="input__control"
+          type="text"
+          placeholder="Placeholder"
+          value="Success"
+        />
+        <svg class="input__icon input__icon_success">
+          <use href="../../assets/images/sprite.svg#Success"></use>
+        </svg>
+        <svg class="input__icon">
+          <use href="../../assets/images/sprite.svg#Error"></use>
+        </svg>
+      </div>
     </div>
     <div class="input input_error">
-      <label class="input__label" for="error">Error</label>
-      <input
-        id="error"
-        class="input__control"
-        type="text"
-        placeholder="Placeholder"
-        value="Error"
-      />
-      <svg class="input__icon">
-        <use href="../../assets/images/sprite.svg#Error"></use>
-      </svg>
-      <p class="input__status">Some status</p>
+      <label class="input__label" for="input4">error</label>
+      <div class="input__wrapper">
+        <input
+          id="input4"
+          class="input__control"
+          type="text"
+          placeholder="Placeholder"
+          value="Error"
+        />
+        <svg class="input__icon">
+          <use href="../../assets/images/sprite.svg#Success"></use>
+        </svg>
+        <svg class="input__icon input__icon_error">
+          <use href="../../assets/images/sprite.svg#Error"></use>
+        </svg>
+      </div>
     </div>
     <div class="input">
-      <label class="input__label" for="disabled">Disabled</label>
-      <input
-        id="disabled"
-        class="input__control"
-        type="text"
-        value="Disabled"
-        disabled
-      />
-      <p class="input__status">Some status</p>
+      <label class="input__label" for="input5">disabled</label>
+      <div class="input__wrapper">
+        <input
+          id="input5"
+          class="input__control"
+          type="text"
+          placeholder="Placeholder"
+          disabled
+        />
+        <svg class="input__icon">
+          <use href="../../assets/images/sprite.svg#Success"></use>
+        </svg>
+        <svg class="input__icon">
+          <use href="../../assets/images/sprite.svg#Error"></use>
+        </svg>
+      </div>
     </div>
   </body>
 </html>
