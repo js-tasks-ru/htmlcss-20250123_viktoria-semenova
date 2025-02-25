@@ -2,7 +2,7 @@
   background-color: var(--background-secondary);
   border-top: 1px solid var(--border-secondary);
   border-bottom: 1px solid var(--border-secondary);
-  padding: 68px 0;
+  padding-bottom: 92px;
 }
 .preview_inner {
   padding: 0;
@@ -25,7 +25,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-bottom: 64px;
+  margin: 68px 0 64px;
 }
 .preview__button {
   /*внешний контейнер для кнопки для центрирования кнопки на странице*/
@@ -34,9 +34,6 @@
 }
 /*стили для телефона с шириной экрана X < 768 */
 @media screen and (max-width: 767px) {
-  .preview {
-    padding: 24px 0;
-  }
   .preview_inner {
     padding: unset;
     background-color: var(--background-primary);
@@ -47,6 +44,6 @@
   .preview__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 23px 16px;
-    margin-bottom: 24px;
+    margin: 24px 0;
   }
 }

@@ -7,9 +7,8 @@
 .tabs__scroller {
   display: flex;
   gap: 40px;
-  position: absolute;
-  top: -105px;
   white-space: nowrap;
+  background-color: var(--background-primary);
 }
 .tabs__label {
   font: var(--p);
@@ -17,78 +16,73 @@
   padding-bottom: 8px;
   position: relative;
 }
-.tabs__label::before,
-.tabs__label::after {
+.tabs__label::before {
   content: '';
   position: absolute;
   bottom: -5px;
   width: 0;
   height: 5px;
   background-color: var(--text-primary);
-}
-.tabs__label::before {
   left: 50%;
-  transition: width 0.3s ease;
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
 }
-.tabs__label::after {
-  right: 50%;
-  transition: width 0.3s ease;
+.tabs__label:hover::before,
+.tabs__radio[id='#all-components']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#all-components']::before,
+.tabs__radio[id='#elements']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#elements']::before,
+.tabs__radio[id='#containers']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#containers']::before,
+.tabs__radio[id='#templates']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#templates']::before {
+  width: 100%;
+  left: 0;
 }
 .tabs__label:hover {
   color: var(--text-primary);
 }
-input[id='#all-components']:checked
+.tabs__radio[id='#all-components']:checked
   ~ .tabs__scroller
-  label[for='#all-components'] {
+  .tabs__label[for='#all-components'] {
   color: var(--text-primary);
 }
-input[id='#elements']:checked ~ .tabs__scroller label[for='#elements'] {
+.tabs__radioput[id='#elements']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#elements'] {
   color: var(--text-primary);
 }
-input[id='#containers']:checked ~ .tabs__scroller label[for='#containers'] {
+.tabs__radio[id='#containers']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#containers'] {
   color: var(--text-primary);
 }
-input[id='#templates']:checked ~ .tabs__scroller label[for='#templates'] {
+.tabs__radio[id='#templates']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#templates'] {
   color: var(--text-primary);
 }
-.tabs__label:hover::before,
-.tabs__label:hover::after,
-input[id='#all-components']:checked
-  ~ .tabs__scroller
-  label[for='#all-components']::before,
-input[id='#all-components']:checked
-  ~ .tabs__scroller
-  label[for='#all-components']::after,
-input[id='#elements']:checked ~ .tabs__scroller label[for='#elements']::before,
-input[id='#elements']:checked ~ .tabs__scroller label[for='#elements']::after,
-input[id='#containers']:checked
-  ~ .tabs__scroller
-  label[for='#containers']::before,
-input[id='#containers']:checked
-  ~ .tabs__scroller
-  label[for='#containers']::after,
-input[id='#templates']:checked
-  ~ .tabs__scroller
-  label[for='#templates']::before,
-input[id='#templates']:checked
-  ~ .tabs__scroller
-  label[for='#templates']::after {
-  width: 50%;
-}
-input[id='#elements']:checked ~ .preview__grid .tabs__content,
-input[id='#containers']:checked ~ .preview__grid .tabs__content,
-input[id='#templates']:checked ~ .preview__grid .tabs__content {
+
+.tabs__radio[id='#elements']:checked ~ .preview__grid .tabs__content,
+.tabs__radio[id='#containers']:checked ~ .preview__grid .tabs__content,
+.tabs__radio[id='#templates']:checked ~ .preview__grid .tabs__content {
   display: none;
 }
-input[id='#elements']:checked ~ .preview__grid .tabs__content_element,
-input[id='#containers']:checked ~ .preview__grid .tabs__content_container,
-input[id='#templates']:checked ~ .preview__grid .tabs__content_template {
+.tabs__radio[id='#elements']:checked ~ .preview__grid .tabs__content_element,
+.tabs__radio[id='#containers']:checked
+  ~ .preview__grid
+  .tabs__content_container,
+.tabs__radio[id='#templates']:checked ~ .preview__grid .tabs__content_template {
   display: flex;
 }
 /*стили для телефона с шириной экрана X < 768 */
 @media screen and (max-width: 767px) {
   .tabs__scroller {
-    top: -61px;
     gap: 24px;
   }
 }
