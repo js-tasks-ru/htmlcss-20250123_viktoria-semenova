@@ -1,11 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <div class="input">
+      <label class="input__label" for="input1">label</label>
+      <div class="input__wrapper">
+        <input
+          id="input1"
+          class="input__control"
+          type="text"
+          placeholder="Placeholder"
+        />
+        <svg class="input__icon">
+          <use href="../../assets/images/sprite.svg#Success"></use>
+        </svg>
+        <svg class="input__icon">
+          <use href="../../assets/images/sprite.svg#Error"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="input input_success">
+      <label class="input__label" for="input3">success</label>
+      <div class="input__wrapper">
+        <input
+          id="input3"
+          class="input__control"
+          type="text"
+          placeholder="Placeholder"
+          value="Success"
+        />
+        <svg class="input__icon input__icon_success">
+          <use href="../../assets/images/sprite.svg#Success"></use>
+        </svg>
+        <svg class="input__icon">
+          <use href="../../assets/images/sprite.svg#Error"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="input input_error">
+      <label class="input__label" for="input4">error</label>
+      <div class="input__wrapper">
+        <input
+          id="input4"
+          class="input__control"
+          type="text"
+          placeholder="Placeholder"
+          value="Error"
+        />
+        <svg class="input__icon">
+          <use href="../../assets/images/sprite.svg#Success"></use>
+        </svg>
+        <svg class="input__icon input__icon_error">
+          <use href="../../assets/images/sprite.svg#Error"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="input">
+      <label class="input__label" for="input5">disabled</label>
+      <div class="input__wrapper">
+        <input
+          id="input5"
+          class="input__control"
+          type="text"
+          placeholder="Placeholder"
+          disabled
+        />
+        <svg class="input__icon">
+          <use href="../../assets/images/sprite.svg#Success"></use>
+        </svg>
+        <svg class="input__icon">
+          <use href="../../assets/images/sprite.svg#Error"></use>
+        </svg>
+      </div>
+    </div>
+  </body>
 </html>
