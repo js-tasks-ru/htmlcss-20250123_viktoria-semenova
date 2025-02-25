@@ -7,7 +7,8 @@
 .tabs__scroller {
   display: flex;
   gap: 40px;
-  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
   background-color: var(--background-primary);
 }
 .tabs__label {
@@ -15,6 +16,8 @@
   color: var(--text-muted);
   padding-bottom: 13px;
   position: relative;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .tabs__label::after {
   content: '';
