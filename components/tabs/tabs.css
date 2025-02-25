@@ -1,0 +1,63 @@
+.tabs {
+  position: relative;
+}
+.tabs__radio {
+  position: absolute;
+}
+.tabs__scroller {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  background-color: var(--background-primary);
+}
+.tabs__label {
+  font: var(--p);
+  color: var(--text-muted);
+  padding-bottom: 13px;
+  position: relative;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.tabs__label::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: var(--text-primary);
+  left: 50%;
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
+}
+.tabs__label:hover {
+  color: var(--text-primary);
+}
+.tabs__label:hover::after {
+  width: 100%;
+  left: 0;
+}
+.tabs__label_active {
+  color: var(--text-primary);
+}
+.tabs__label_active::after {
+  width: 100%;
+  left: 0;
+}
+.tabs__radio[id='#elements']:checked ~ .preview .tabs__content,
+.tabs__radio[id='#containers']:checked ~ .preview .tabs__content,
+.tabs__radio[id='#templates']:checked ~ .preview .tabs__content {
+  display: none;
+}
+.tabs__radio[id='#elements']:checked ~ .preview .tabs__content_element,
+.tabs__radio[id='#containers']:checked ~ .preview .tabs__content_container,
+.tabs__radio[id='#templates']:checked ~ .preview .tabs__content_template {
+  display: flex;
+}
+/*стили для телефона с шириной экрана X < 768 */
+@media screen and (max-width: 767px) {
+  .tabs__scroller {
+    gap: 24px;
+  }
+}
