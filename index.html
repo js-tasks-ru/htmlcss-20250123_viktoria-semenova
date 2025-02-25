@@ -20,38 +20,29 @@
           <h1 class="header__title">Reusable component library</h1>
         </div>
       </header>
-      <main class="preview page__main">
+      <div class="tabs">
+        <input
+          type="radio"
+          id="#all-components"
+          class="tabs__radio"
+          name="tab"
+          checked
+        />
+        <input type="radio" id="#elements" class="tabs__radio" name="tab" />
+        <input type="radio" id="#containers" class="tabs__radio" name="tab" />
+        <input type="radio" id="#templates" class="tabs__radio" name="tab" />
         <div class="content-area">
-          <div class="tabs">
-            <input
-              type="radio"
-              id="#all-components"
-              class="tabs__radio"
-              name="tab"
-              checked
-            />
-            <input type="radio" id="#elements" class="tabs__radio" name="tab" />
-            <input
-              type="radio"
-              id="#containers"
-              class="tabs__radio"
-              name="tab"
-            />
-            <input
-              type="radio"
-              id="#templates"
-              class="tabs__radio"
-              name="tab"
-            />
-            <div class="tabs__scroller">
-              <label for="#all-components" class="tabs__label"
-                >All components</label
-              >
-              <label for="#elements" class="tabs__label">Elements</label>
-              <label for="#containers" class="tabs__label">Containers</label>
-              <label for="#templates" class="tabs__label">Templates</label>
-            </div>
-
+          <div class="tabs__scroller">
+            <label for="#all-components" class="tabs__label"
+              >All components</label
+            >
+            <label for="#elements" class="tabs__label">Elements</label>
+            <label for="#containers" class="tabs__label">Containers</label>
+            <label for="#templates" class="tabs__label">Templates</label>
+          </div>
+        </div>
+        <main class="preview page__main">
+          <div class="content-area">
             <div class="preview__grid">
               <a href="#" class="card tabs__content tabs__content_container">
                 <div class="card__content"></div>
@@ -100,8 +91,8 @@
               <button class="button button_alternate">Load more</button>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
       <footer class="footer">
         <div class="content-area">
           <h2 class="footer__title">About</h2>
@@ -115,4 +106,5 @@
       </footer>
     </div>
   </body>
+  <script src="./components/tabs/tabs.js"></script>
 </html>

@@ -13,13 +13,13 @@
 .tabs__label {
   font: var(--p);
   color: var(--text-muted);
-  padding-bottom: 8px;
+  padding-bottom: 13px;
   position: relative;
 }
-.tabs__label::before {
+.tabs__label::after {
   content: '';
   position: absolute;
-  bottom: -5px;
+  bottom: 0;
   width: 0;
   height: 5px;
   background-color: var(--text-primary);
@@ -28,56 +28,28 @@
     width 0.3s ease,
     left 0.3s ease;
 }
-.tabs__label:hover::before,
-.tabs__radio[id='#all-components']:checked
-  ~ .tabs__scroller
-  .tabs__label[for='#all-components']::before,
-.tabs__radio[id='#elements']:checked
-  ~ .tabs__scroller
-  .tabs__label[for='#elements']::before,
-.tabs__radio[id='#containers']:checked
-  ~ .tabs__scroller
-  .tabs__label[for='#containers']::before,
-.tabs__radio[id='#templates']:checked
-  ~ .tabs__scroller
-  .tabs__label[for='#templates']::before {
-  width: 100%;
-  left: 0;
-}
 .tabs__label:hover {
   color: var(--text-primary);
 }
-.tabs__radio[id='#all-components']:checked
-  ~ .tabs__scroller
-  .tabs__label[for='#all-components'] {
+.tabs__label:hover::after {
+  width: 100%;
+  left: 0;
+}
+.tabs__label_active {
   color: var(--text-primary);
 }
-.tabs__radioput[id='#elements']:checked
-  ~ .tabs__scroller
-  .tabs__label[for='#elements'] {
-  color: var(--text-primary);
+.tabs__label_active::after {
+  width: 100%;
+  left: 0;
 }
-.tabs__radio[id='#containers']:checked
-  ~ .tabs__scroller
-  .tabs__label[for='#containers'] {
-  color: var(--text-primary);
-}
-.tabs__radio[id='#templates']:checked
-  ~ .tabs__scroller
-  .tabs__label[for='#templates'] {
-  color: var(--text-primary);
-}
-
-.tabs__radio[id='#elements']:checked ~ .preview__grid .tabs__content,
-.tabs__radio[id='#containers']:checked ~ .preview__grid .tabs__content,
-.tabs__radio[id='#templates']:checked ~ .preview__grid .tabs__content {
+.tabs__radio[id='#elements']:checked ~ .preview .tabs__content,
+.tabs__radio[id='#containers']:checked ~ .preview .tabs__content,
+.tabs__radio[id='#templates']:checked ~ .preview .tabs__content {
   display: none;
 }
-.tabs__radio[id='#elements']:checked ~ .preview__grid .tabs__content_element,
-.tabs__radio[id='#containers']:checked
-  ~ .preview__grid
-  .tabs__content_container,
-.tabs__radio[id='#templates']:checked ~ .preview__grid .tabs__content_template {
+.tabs__radio[id='#elements']:checked ~ .preview .tabs__content_element,
+.tabs__radio[id='#containers']:checked ~ .preview .tabs__content_container,
+.tabs__radio[id='#templates']:checked ~ .preview .tabs__content_template {
   display: flex;
 }
 /*стили для телефона с шириной экрана X < 768 */
