@@ -9,20 +9,20 @@
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-        <button class="btn btn_open" id="burger-menu-open">
-            <svg class="btn__icon btn__icon_open">
+        <button class="btn" id="burger-menu-open">
+            <svg class="btn__icon">
               <use href="../../assets/images/sprite.svg#menu"></use>
             </svg>
           </button>
           <div class="burger-menu" id="burger-menu">
             <header class="header header_inner">
               <div class="content-area">
-                <div class="header__top">
+                <div class="burger-menu__header header__top">
                   <button
-                    class="btn btn_close burger-menu__btn"
+                    class="btn burger-menu__btn"
                     id="burger-menu-close"
                   >
-                    <svg class="btn__icon btn__icon_close">
+                    <svg class="btn__icon burger-menu__icon">
                       <use href="../../assets/images/sprite.svg#Close"></use>
                     </svg>
                   </button>
@@ -35,17 +35,7 @@
             </header>
             <div class="burger-menu__main">
               <div class="content-area">
-                      <label class="toggler">
-                          <input type="checkbox" class="toggler__input" />
-                          <div class="toggler__state">
-                              <div class="toggler__title">Dark mode</div>
-                            <div class="toggler__control">
-                              <div class="toggler__icon"></div>
-                            </div>
-                          </div>
-                        </label>
                         <nav class="burger-menu__nav">
-
                           <h4 class="burger-menu__title">Components</h4>
                           <a href="#" class="burger-menu__link">Modal</a>
                           <a href="#" class="burger-menu__link burger-menu__link_active">Tooltip</a>
@@ -55,11 +45,9 @@
                           <a href="#" class="burger-menu__link">Custom form elements</a>
                           <a href="#" class="burger-menu__link"></a>
                           <a href="#" class="burger-menu__link">Main page</a>
-
-
-                              </nav>
+                          </nav>
                       </div>
-                  </div>
+              </div>
 
       </div>
     </body>

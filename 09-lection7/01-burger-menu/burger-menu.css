@@ -12,22 +12,18 @@
 .burger-menu[data-open] {
   transform: none;
 }
-.burger-menu .header__top {
+.burger-menu__header {
   margin-bottom: 0px;
 }
 .burger-menu__btn {
   position: absolute;
   top: 0;
   left: 0;
+  background-color: var(--border-secondary);
+  border-radius: 50%;
 }
-.burger-menu__main .toggler {
-  padding: 28px 0 24px;
-  border-bottom: 1px solid var(--border-secondary);
-  border-top: 1px solid var(--border-secondary);
-  display: block;
-}
-.burger-menu__main .toggler__state {
-  justify-content: space-between;
+.burger-menu__icon {
+  color: var(--text-primary);
 }
 .burger-menu__nav {
   padding-top: 24px;
