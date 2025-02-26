@@ -12,11 +12,7 @@
   white-space: nowrap;
   overflow: hidden;
   transform: none;
-  transition:
-    opacity 200ms ease-in-out,
-    background-color 200ms ease-in-out,
-    border-color 200ms ease-in-out,
-    transform 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .button_primary {
   background-color: var(--primary);
