@@ -2,11 +2,53 @@
 <!-- Страница бургер-меню -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
+        <link rel="stylesheet" href="./btn.css">
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
+        <button class="btn" id="burger-menu-open">
+            <svg class="btn__icon">
+              <use href="../../assets/images/sprite.svg#menu"></use>
+            </svg>
+          </button>
+          <div class="burger-menu" id="burger-menu">
+            <header class="header header_inner">
+              <div class="content-area">
+                <div class="burger-menu__header header__top">
+                  <button
+                    class="btn burger-menu__btn"
+                    id="burger-menu-close"
+                  >
+                    <svg class="btn__icon burger-menu__icon">
+                      <use href="../../assets/images/sprite.svg#Close"></use>
+                    </svg>
+                  </button>
+                  <img
+                    class="logo header__logo"
+                    src="../../assets/images/logo.svg"
+                    alt="Логотип"
+                  />
+              </div>
+            </header>
+            <div class="burger-menu__main">
+              <div class="content-area">
+                        <nav class="burger-menu__nav">
+                          <h4 class="burger-menu__title">Components</h4>
+                          <a href="#" class="burger-menu__link">Modal</a>
+                          <a href="#" class="burger-menu__link burger-menu__link_active">Tooltip</a>
+                          <a href="#" class="burger-menu__link">Avatar</a>
+                          <a href="#" class="burger-menu__link">Calendar</a>
+                          <a href="#" class="burger-menu__link">Histogram</a>
+                          <a href="#" class="burger-menu__link">Custom form elements</a>
+                          <a href="#" class="burger-menu__link"></a>
+                          <a href="#" class="burger-menu__link">Main page</a>
+                          </nav>
+                      </div>
+              </div>
 
+      </div>
     </body>
 </html>

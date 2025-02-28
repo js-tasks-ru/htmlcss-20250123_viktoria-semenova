@@ -1,0 +1,12 @@
+.btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--text-secondary);
+}
